@@ -1,0 +1,3 @@
+.env
+__pycache__/
+.crewai_venv/

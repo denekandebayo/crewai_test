@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "document_analyser"
+version = "0.1.0"
+description = "document-analyser using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.30.8"}
+langchain = "^0.1.20"
+langchain-google-vertexai = "^1.0.3"
+langgraph = "^0.0.48"
+agentops = "^0.1.10"
+
+[tool.poetry.scripts]
+document_analyser = "document_analyser.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
